@@ -40,6 +40,21 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
+app.MapGet("/tax/{price}/{tax}", (decimal price, decimal tax) =>
+{
+    decimal final = price + (price * tax);
+
+    var result = new
+    {
+        price = price,
+        tax = $"{tax * 100}%",
+        final = final
+    };
+
+    return Results.Json(result);
+})
+.WithName("GetTaxInfo");
+
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
