@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LaSalle\\4th\\trends\\studetn-management-system\\api\\api.csproj": {}
+    "D:\\LaSalle\\4th\\trends\\New folder\\studetn-management-system\\api\\api.csproj": {}
   },
   "projects": {
-    "D:\\LaSalle\\4th\\trends\\studetn-management-system\\api\\api.csproj": {
+    "D:\\LaSalle\\4th\\trends\\New folder\\studetn-management-system\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LaSalle\\4th\\trends\\studetn-management-system\\api\\api.csproj",
+        "projectUniqueName": "D:\\LaSalle\\4th\\trends\\New folder\\studetn-management-system\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "D:\\LaSalle\\4th\\trends\\studetn-management-system\\api\\api.csproj",
+        "projectPath": "D:\\LaSalle\\4th\\trends\\New folder\\studetn-management-system\\api\\api.csproj",
         "packagesPath": "C:\\Users\\omega\\.nuget\\packages\\",
-        "outputPath": "D:\\LaSalle\\4th\\trends\\studetn-management-system\\api\\obj\\",
+        "outputPath": "D:\\LaSalle\\4th\\trends\\New folder\\studetn-management-system\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,9 +51,47 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.6.1, )"
+            },
+            "Microsoft.aspNetCore.Authentication.jwtBearer": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.6.1, )"
             }
           },
           "imports": [
