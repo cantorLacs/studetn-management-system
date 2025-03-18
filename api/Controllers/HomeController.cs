@@ -13,7 +13,7 @@ namespace API.Controllers {
         }
 
         [HttpGet("protected")]
-        [Authorize(Policy = "RequireUserRole")]
+        [Authorize(Policy = "RequireAdminRole")]
         public IActionResult ProtectedEndpoint()
         {
             return Ok(new { Status = "Success", Message = "If you are logged, you can see me"});
