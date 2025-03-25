@@ -49,7 +49,7 @@ namespace API.Controllers
             return BadRequest(result.Errors);
         }
 
-        [HttpPost("register-admin")] // Temporary endpoint, remove after use!
+        [HttpPost("register-admin")] // /auth/register-admin
         public async Task<IActionResult> RegisterAdmin([FromBody] RegisterModel model)
         {
             var user = new IdentityUser { UserName = model.Email, Email = model.Email };
@@ -63,7 +63,7 @@ namespace API.Controllers
                 return BadRequest(result.Errors);
         }
 
-        [HttpPost("login")]
+        [HttpPost("login")]// /auth/login
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
             var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
